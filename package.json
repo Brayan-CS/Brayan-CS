@@ -1,0 +1,30 @@
+{
+  "name": "reto",
+  "version": "1.0.0",
+  "description": "MapaReto",
+  "main": "codigo.js",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test": "jest --verbose --coverage",
+    "open-coverage-report": "opener ./coverage/lcov-report/index.html",
+    "start": "serve ./src",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brayan-CS/RetoUD.git"
+  },
+  "keywords": [
+    "UD",
+    "conectividad",
+    "COVID-19"
+  ],
+  "author": "Brayan Cardozo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brayan-CS/RetoUD/issues"
+  },
+  "homepage": "https://github.com/Brayan-CS/RetoUD#readme"
+}
