@@ -52,11 +52,8 @@ require([
         }
    
 
-
-
         var geojsonLayer = new GeoJSONLayer({
-          url: "https://drive.google.com/drive/u/1/my-drive/data.json",
-          popupTemplate: template
+          url: "data2.geojson"
         });
 
         map.add(geojsonLayer)
