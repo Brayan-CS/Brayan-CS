@@ -4,10 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Portal de gestión apoyo conectividad UD</title>
+    <script src="https://kit.fontawesome.com/c0075b8700.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script class="Map" src="https://js.arcgis.com/4.17/"></script>
+    
     <script src="codigo.js" ></script>
    
   </head>
@@ -17,22 +20,50 @@
 
 
         <h1 id="titulo">PGACUD</h1>
-        <img id="logo" src="imagenes/logo.png"></img>
+        <div>
+          <img id="logo" src="imagenes/logo.png"></img>
+        </div>
+      <div class="containernav">
+        <nav class="nav">
 
-     
+        <ul class="nav__ul" >
+
+          <li class="nav__li"><i class="fas fa-home"></i><a href="">Inicio</a></li> 
+          <li class="nav__li"><i class="fas fa-question-circle"></i><a href="">Ayuda</a></li>
+          <li class="nav__li"><i class="fas fa-info-circle"></i><a href="">Información</a></li>
+          <li class="nav__li"><i class="fas fa-address-card"></i><a href="">Reportar un problema</a></li>
+   
+        </ul>
+
+      </nav>
+    </div>
 
     </header>
     <div id="viewDiv">
-     
+      <div id="titleDiv" class="esri-widget">
+        <div id="titleText">Portal de gestión del apoyo de conectividad</div>
+        <div>Universidad Distrital FJC</div>
+      </div>
+
+      
       <div class = "container">
 
+      <h2 id="herramientas"> Herramientas </h2>  
       <button id="openMenu">Abrir selector mapa base</button>
       <button id="closeMenu">Cerrar selector mapa base</button>
-
+      <br><button id="editor"><a href="https://www.arcgis.com/home/webmap/viewer.html?layers=b049dfc78a414d13abf33e7f4b8ea971" target="_blank">Editor ArcGis Online</a></button>
+      <h2 id="capas">Administrador de Capas </h2>
+      <button id="layerben">On/Off [Beneficiarios]</button>
+      <button id="layermdc">On/Off [Mapa de Calor puntaje]</button>
+      
     </div>
       
+    
 
 
+    </div>
+
+    
     </div>
   </body>
 </html>
