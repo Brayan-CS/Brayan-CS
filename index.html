@@ -5,8 +5,9 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Portal de gestión apoyo conectividad UD</title>
     <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css">
+    
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <script src="https://js.arcgis.com/4.17/"></script>
+    <script class="Map" src="https://js.arcgis.com/4.17/"></script>
     <script src="codigo.js" ></script>
    
   </head>
@@ -15,16 +16,20 @@
     <header class="mapMenu">
 
 
-      <h1>PGACUD</h1>
+        <h1 id="titulo">PGACUD</h1>
+        <img id="logo" src="imagenes/logo.png"></img>
 
      
 
     </header>
     <div id="viewDiv">
      
+      <div class = "container">
 
-      <button id="openMenu">Abrir slector mapa base</button>
-      <button id="closeMenu">Cerrar slector mapa base</button>
+      <button id="openMenu">Abrir selector mapa base</button>
+      <button id="closeMenu">Cerrar selector mapa base</button>
+
+    </div>
       
 
 
