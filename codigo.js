@@ -3,8 +3,9 @@ require([
     "esri/Map", 
     "esri/views/MapView", 
     "esri/widgets/BasemapToggle", 
-    "esri/widgets/BasemapGallery"
-], function (Map, MapView, BasemapGallery) {
+    "esri/widgets/BasemapGallery",
+    "esri/layers/FeatureLayer"
+], function (Map, MapView, BasemapGallery, FeatureLayer) {
  
     var map = new Map({
     basemap: "topo-vector"
@@ -17,7 +18,8 @@ require([
     zoom: 15
     });
 
-  
+ 
+
 
     var basemapGallery = new BasemapGallery({
         view: view,
@@ -50,5 +52,14 @@ require([
         }
    
 
+
+
+        var geojsonLayer = new GeoJSONLayer({
+          url: "https://drive.google.com/drive/u/1/my-drive/data.json",
+          popupTemplate: template
+        });
+
+        map.add(geojsonLayer)
+        
 });
 
