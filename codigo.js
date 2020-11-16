@@ -20,10 +20,10 @@ require([
       var control = -1;  
       var control2 = -2;
       const layer_ben = document.getElementById("layerben")
-      layer_ben.addEventListener("click", ben)
+      layer_ben.addEventListener("click", ben);
   
       const layer_mdc = document.getElementById("layermdc")
-      layer_mdc.addEventListener("click", mdc)
+      layer_mdc.addEventListener("click", mdc);
 
 
       function ben(){
@@ -51,13 +51,8 @@ require([
           map.removeAll()
 
         }
-
-      
-
       }
         
-
-
       function mdc(){
 
         control2 = control2 * -1;
@@ -75,19 +70,12 @@ require([
       });
     }
 
-    if (control2 ==-2){
-
-        
+    if (control2 ==-2){      
       map.removeAll()
 
     }
 
-
-
-
     }
-  
-
 
   
       var view = new MapView({
@@ -120,8 +108,7 @@ require([
         
         function closeMapg(){
     
-            view.ui.remove(basemapGallery, "top-right");
-            
+            view.ui.remove(basemapGallery, "top-right");           
            
         }
         function openMapg(){
@@ -131,11 +118,12 @@ require([
             
         }
 
-
-
       });
         
        
+
+      
+      
         
 
    

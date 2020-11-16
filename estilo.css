@@ -181,3 +181,17 @@ margin-right: 100px;
 
 
 }
+
+#titleForm{
+
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+}
+
+.containerForm{
+
+  text-align: center;
+  font-family: 'Secular One', sans-serif;
+  border-style: solid;
+  border-color: rgb(225, 173, 230);
+}
